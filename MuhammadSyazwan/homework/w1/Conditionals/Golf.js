@@ -4,7 +4,7 @@ let score = checkNum(prompt("","Insert Score"),2);
 let diff = score - par;
 
 let result = 
-(score === 1)?"Hole in one":(diff === -1)?"Birdie":(diff === -2)?"Eagle":
+(score === 1)?"Hole in one":(diff === -1)?"Birdie":(diff === -2)?"Eagle":(diff === -3 && par === 5)?"Eagle":
 (diff === 0)?"Par":(diff === 1)?"Bogey":(diff === 2)?"Double Bogey":(diff > 2)?"Not Sure":"Invalid Score";
 
 console.log(result);
